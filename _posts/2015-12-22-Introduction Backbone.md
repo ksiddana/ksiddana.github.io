@@ -181,3 +181,58 @@ var PeopleView = Backbone.View.extend({
   }
 });
 {% endhighlight %}
+
+Use the Chrome Console to navigate the attributes of Person, PersonView and PeopleCollection. Again, an instance of the PeopleView has not been created, and the render function has also not been invoked, therefore this code above alone will not run. Use the HTML code below or create instances in the Chrome Developer's console to invoke the render method on JSON data.
+
+{% highlight HTML %}
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+       <link rel="stylesheet" href="bower_components/bootstrap.css">
+   </head>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+
+   <script id="personTemplate" type="text/template">
+      <%= name %> (<%= age %>) - <%= occupation %>
+   </script>
+    
+    <div class="tasks">
+      <script id="taskTemplate" type="text/template">
+        <span><%= title %></span> <button class="edit">Edit</button> <button class="delete">Delete</button>
+      </script>
+    </div>
+    <script>
+      
+      <!-- Create an instance of Person as a Backbone Model -->
+      var person = new Person;
+      
+      <!-- Create a View for the Person as a Backbone View -->
+      var personView = new PersonView({ model: person });
+      
+      <!-- Create a View for the list of People as Backbone Collection -->
+      var peopleView = new PeopleView( { collection : peopleCollection });
+      
+      <!-- Check the DOM node of peopleView before rendering -->
+      peopleView.el;
+      
+      peopleView.render();
+      
+      <!-- Check the DOM node of peopleView after rendering -->
+      peopleView.el;
+      
+      <!-- Append the people View nodes to the DOM -->
+      $(document.body).append(peopleView.el);
+      
+    </script>
+    
+    <!-- // <script src="Person-01.js"></script> -->
+    <script src="Person-02.js"></script>
+    <!-- // <script src="Person-03.js"></script> -->
+    <!-- // <script src="Person-04.js"></script> -->
+
+</body>
+</html>
+{% endhighlight %}
