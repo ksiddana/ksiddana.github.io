@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Backbone Introduction
+date: 2015-12-22 10:00:00
 ---
 
 Your probably wondering, why do we have to write so much code for displaying HTML elements that don't currently have a feature rich component. These are called single page applications. Backbone consists of building web pages using the following architectures:

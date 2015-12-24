@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Working on my Javascript chomps with special interest in Data Visualizaion.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I have a vision of making this place way better than it is. If there's light, only the ones with the candle can see it.
+
+This is where I talk about my Technical skills and share ideas and posts about sample projects and tutorials to help kick start web applications.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Karun Siddana
