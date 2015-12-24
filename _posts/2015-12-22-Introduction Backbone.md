@@ -21,7 +21,7 @@ Refer to the following links to guide you through a beginners introduction to Ba
 2. [Backbone Tutorials](https://backbonetutorials.com/)
 3. [Thomas Davis - Why would you use Backbone](https://cdnjs.com/libraries/backbone.js/tutorials/why-would-you-use-backbone)
 
-###Section 01###
+###Step 1###
 
 I'm going to start of with a simple code block for a Backbone Model with a class **Person**.
 {% highlight javascript %}
@@ -51,6 +51,8 @@ var Person = Backbone.Model.extend({
 });
 {% endhighlight %}
 
+###Step 2###
+
 A **View** allows you to listen to events from the DOM and also render events to the DOM. In this case we want to render the attributes of the instance of Person to the DOM.
 {% highlight javascript %}
 var PersonView = Backbone.View.extend({
@@ -77,6 +79,8 @@ var PersonView = Backbone.View.extend({
 
 });
 {% endhighlight %}
+
+###Step 3###
 
 The code simply above will not render anything on the DOM, since we have not called the *render* method. We need to create an instance of **Person** and an instance of **PersonView** and append the data from **Person** to the DOM using the **PersonView** instance.
 
@@ -121,7 +125,7 @@ The code simply above will not render anything on the DOM, since we have not cal
 
 Notice how person and personView have been instantiated. Instance personView is of type PersonView that takes in the Backbone Model *person*.
 
-###Section 02###
+###Step 4###
 
 Now lets talk about collections, a collection is a filtered list of people that you would like to view on the DOM, from your data model. In case you invoke a filter function that only wants to see the people older than 21 you would want to refer to that list as a collection that is rendered to the DOM using a Backbone Collection View.
 
@@ -155,6 +159,8 @@ var peopleCollection = new PeopleCollection([
 ]);
 {% endhighlight %}
 
+###Step 5###
+
 Now lets create a View for the Collection and render the list of People on the DOM. In order to stay modular, you will notice, the data does not change a lot, however, we may have several Views, using the same data, but manupilating different parts of the DOM. Essentially, you have a single model, and single collection but several views, rendering different parts of the DOM.
 
 {% highlight javascript %}
@@ -182,6 +188,8 @@ var PeopleView = Backbone.View.extend({
   }
 });
 {% endhighlight %}
+
+###Step 6###
 
 Use the Chrome Console to navigate the attributes of Person, PersonView and PeopleCollection. Again, an instance of the PeopleView has not been created, and the render function has also not been invoked, therefore this code above alone will not run. Use the HTML code below or create instances in the Chrome Developer's console to invoke the render method on JSON data.
 
