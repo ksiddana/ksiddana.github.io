@@ -190,3 +190,7 @@ body {
 }
 {% endhighlight %}
 
+### Snapshot of the Soundcloud Data ###
+
+<span class="snapshot"><img src="/images/Backbone Soundcloud Tutorial Screenshot.jpg" alt=""></span>
+[Soundcloud API Data]({{ site.baseurl }}/images/Backbone Soundcloud Tutorial Screenshot.jpg)
