@@ -6,10 +6,10 @@
 name: Karun Siddana
 
 # Short bio or description (displayed in the header)
-description: Front End Developer
+description: Front End Developer with Interest in Data Visualization
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/karun-profile-pic.jpg
+avatar: /images/karun-profile-pic-1.png
 
 #
 # Flags below are optional
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: ksiddana
   instagram:
-  linkedin: https://www.linkedin.com/in/ksiddana
+  linkedin: ksiddana
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: peakGravitation
