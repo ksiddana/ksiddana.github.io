@@ -74,6 +74,7 @@ a {
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
+    font-style: bold;
   }
 }
 
@@ -152,11 +153,11 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background: linear-gradient(#57C2FF, #EAE7E7);
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
