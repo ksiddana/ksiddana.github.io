@@ -50,7 +50,7 @@ module.exports = {
 
 Now to load the mathFunctions.js module into another module we can use the `require` statement. So for instance if we wanted to use add2 in another file we would write the following code.
 
-{% highlight javascrip %}
+{% highlight javascript %}
 // function2.js
 var math = require('./mathFunctions.js')
 
