@@ -4,13 +4,11 @@ title: Module Exports with Node.js
 date: 2016-01-31 16:00:00
 ---
 
+As an application begins to scale, the complexity can be reduced by modularizing your code in a way that it can be comprehended by other users. MVC frameworks like Backbone.js have already introduced concepts of Models, Collections and Views on the front end.
+
 ###Understanding exports in Node.js
 
-As an application begins to scale, the complexity can be reduced by modularizing your code in a way that it can be comprehended by other users. MVC frameworks like Backbone.js have already introduced cocepts of Models, Collections and Views on the front end.
-
 Node allows you to modularize your code at the backend by using `module.exports`. 
-
-
 
 A file in Node is called a module. Functions and variables within a file cannot be accessed directly by using inheritence or dependency injection. However, it would be rather useful to expose the functionality of a file while keeping it modular at the same time. 
 
@@ -48,7 +46,7 @@ module.exports = {
 }
 {% endhighlight %}
 
-Now to load the mathFunctions.js module into another module we can use the `require` statement. So for instance if we wanted to use add2 in another file we would write the following code.
+Now to load the mathFunctions.js module into another module we can use the `require` statement. So for instance if we wanted to use add in another file we could simply require the file and assign it to a variable.
 
 {% highlight javascript %}
 // function2.js
