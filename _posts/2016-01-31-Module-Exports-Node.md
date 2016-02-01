@@ -6,17 +6,15 @@ date: 2016-01-31 16:00:00
 
 ###Understanding exports in Node.js
 
-As your application begins grow and you are retrieving data from a database like Mongo and adding more functionality, your going to see the need to seperate your model from your database calls within a node module. 
+As an application begins to scale, the complexity leads to modularizing your code in a way that it can be comprehended by other users. MVC frameworks like Backbone have already introduced us to cocepts of Models, Collections and Views on the front end.
 
-Node allows you to modularize your code by using `module.exports` statements. Let's get into what are module.exports statements.
+Node allows you to modularize your code at the backend by using `module.exports`. In the example shown below, there is a user Model with a `userSchema` that uses a userController and a Test that can be written for unit test purposes.
 
 ###Module Export Statments
 
-All functions within a 
-
 #####userModel.js
 {% highlight javascript %}
-//User.js Mongoose Model
+// userModel.js Mongoose Model
 
 var mongoose = require('mongoose');
 
@@ -31,6 +29,7 @@ module.exports = mongoose.model('User', schema);
 
 #####userController.js
 {% highlight javascript %}
+// userController.js
 var User = require('../models/User.js')
 
 exports.findByUserName = function (name, callback) {
@@ -40,6 +39,7 @@ exports.findByUserName = function (name, callback) {
 
 #####userControllerTest.js
 {% highlight javascript %}
+// userControllerTest.js
 var expect = require('chai').expect;
 var mongoose = require('mongoose');
 var User = require('../models/User');
