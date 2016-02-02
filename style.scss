@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: $white;
+  background: #D7DDDA;
   font: 17px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: Oxygen, 'Helvetica Neue', Arial, sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
@@ -177,7 +177,8 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 50%;
+    width: 20%;
   }
 }
 
@@ -243,7 +244,7 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
 }
 
@@ -267,7 +268,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 15px;
   }
 }
