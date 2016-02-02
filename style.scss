@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Oxygen, 'Helvetica Neue', Arial, sans-serif;
+  font-family: $Oxygen, 'Helvetica Neue', Arial, sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
@@ -178,7 +178,6 @@ img {
 
   img {
     border-radius: 50%;
-    width: 20%;
   }
 }
 
