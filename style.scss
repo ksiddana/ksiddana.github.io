@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Oxygen, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 26px;
   a {
     color: inherit;
   }
@@ -152,12 +152,13 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
-  background: linear-gradient(#57C2FF, #EAE7E7);
+  /*background: linear-gradient(#656565, #EAE7E7);*/
+  background: #656565;
+  height: 200px;
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 40px 0;
 
   @include mobile {
     text-align: center;
@@ -193,7 +194,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #C3C3BD;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -203,7 +204,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #C3C3BD;
   font-size: 16px;
 
   @include mobile {
@@ -226,7 +227,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #C3C3BD;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;

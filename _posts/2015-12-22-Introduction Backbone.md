@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Backbone Introduction
+title: Introduction to Backbone
 date: 2015-12-22 10:00:00
 ---
 
