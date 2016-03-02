@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Module Exports with Node.js
-date: 2016-01-31 16:00:00
+date: 2016-02-01 16:00:00
 ---
 
 As an application begins to scale, the complexity can be reduced by modularizing your code in a way that it can be comprehended by other users. MVC frameworks like Backbone.js have already introduced concepts of Models, Collections and Views on the front end.
